@@ -1,22 +1,15 @@
-# DevOpsFundamentals
+# Desafio: Criar um Repositório e Enviar Arquivos via Git Bash
 
+## Descrição
 
-## Getting started
+Neste desafio, você aprenderá a criar um repositório no GitHub e enviar novos arquivos para esse repositório utilizando o **Git Bash**. O objetivo é praticar as etapas de clonagem, adição de arquivos, commit e envio de alterações para um repositório remoto.
 
-To make it easy for you to get started with Github, here's a list of recommended next steps.
+Este repositório foi criado como parte do aprendizado de **DevOps Fundamentals**.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Passos para a Conclusão do Desafio
 
-## fork files
+### 1. **Clonando o Repositório**
+Primeiro, clone o repositório original usando o comando abaixo:
 
-```
-cd existing_repo
-git remote add origin https://github.com/codeguima/devopsfundamentals.git
-git branch -M main
-git push -uf origin main
-```
-
-
-
-
-
+```bash
+git clone https://github.com/codeguima/devopsfundamentals.git
