@@ -53,7 +53,7 @@ O `terraform.tfstate` é armazenado em:
 ## ✍️ Autor
 
 Desenvolvido por **Jhonny Guimarães**  
-📍 Colombo - PR  
+📍 Curitiba - PR  
 🎓 Sistemas de Informação - Universidade Positivo  
 🌐 [codeguima](https://www.codeguima.com.br)
 
