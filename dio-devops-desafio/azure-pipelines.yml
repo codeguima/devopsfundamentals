@@ -1,0 +1,34 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Desenvolvimento2(8e38259a-6be6-4198-8ce7-aeb0fcec65c0)'
+    backendAzureRmResourceGroupName: 'rg-infraestrutura-001'
+    backendAzureRmStorageAccountName: 'stinfradevopsdev002'
+    backendAzureRmContainerName: 'cont-infradevops'
+    backendAzureRmKey: 'terraform.tfstate'  # Corrigi a chave para algo adequado
+
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    backendServiceArm: 'Desenvolvimento2(8e38259a-6be6-4198-8ce7-aeb0fcec65c0)'
+    backendAzureRmResourceGroupName: 'rg-infraestrutura-001'
+    backendAzureRmStorageAccountName: 'stinfradevopsdev002'
+    backendAzureRmContainerName: 'cont-infradevops'
+    backendAzureRmKey: 'terraform.tfstate'
+
+- script: echo "Hello, world!"
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo "Add other tasks to build, test, and deploy your project."
+    echo "See https://aka.ms/yaml"
+  displayName: 'Run a multi-line script'
