@@ -1,3 +1,14 @@
+<table>
+  <tr>
+    <td>
+      <h1>⚛️ Curso de DevOps Fundamentals - DIO</h1>
+    </td>
+    <td align="right">
+      <img src="./" alt="Logo React" width="100"/>
+    </td>
+  </tr>
+</table>
+
 # Desafio: Criar um Repositório e Enviar Arquivos via Git Bash
 
 ## Descrição
